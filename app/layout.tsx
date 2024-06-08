@@ -1,9 +1,14 @@
 import { Providers } from './providers';
 
 import type { Metadata } from 'next';
+import { DM_Sans } from 'next/font/google';
 import './globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+
+const dmSans = DM_Sans({
+	subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -17,7 +22,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body>
+			<body
+				className={`bg-lightbg text-black dark:bg-darkbg dark:text-white ${dmSans.className}`}
+			>
 				<Providers>
 					<main>
 						<Navbar />

@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background-light: 255, 255, 255;
-  --background-dark: 0 29 24;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -15,12 +10,4 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: rgb(var(--background-light));
-}
-
-.dark body {
-  background-color: rgb(var(--background-dark));
 }
