@@ -7,6 +7,7 @@ type ButtonProps = {
 	textColor?: string;
 	arrow?: boolean;
 	navBtn?: boolean;
+	transparent?: boolean;
 	href: string;
 };
 
@@ -16,6 +17,7 @@ const Button = ({
 	textColor = 'white',
 	arrow = true,
 	navBtn = false,
+	transparent = true,
 	href,
 }: ButtonProps) => {
 	const bg_color =
@@ -26,8 +28,10 @@ const Button = ({
 	return (
 		<Link
 			href={href}
-			className={`flex gap-2 items-center ${bg_color} ${text_color} px-8 rounded inline-flex text-base ${
+			className={`flex gap-2 items-center ${text_color} px-8 rounded inline-flex text-base ${
 				navBtn ? 'py-3' : 'py-4'
+			} ${
+				transparent ? 'bg-transparent border border-primary-green' : bg_color
 			}`}
 		>
 			<span>{text}</span>
