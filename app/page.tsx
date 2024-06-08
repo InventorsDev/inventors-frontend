@@ -7,8 +7,6 @@ import MeetLeads from './components/lp_sections/MeetLeads';
 import Partners from './components/lp_sections/Partners';
 import PastEvents from './components/lp_sections/PastEvents';
 
-import Button from './components/Button'; // Import the Button component
-
 export default function Home() {
 	return (
 		<>
