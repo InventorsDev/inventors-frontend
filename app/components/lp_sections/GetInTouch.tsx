@@ -1,7 +1,21 @@
+import Button from '../Button';
+
 const GetInTouch = () => {
 	return (
-		<div>
-			<h1>Let&apos;s get in touch!</h1>
+		<div className="flex justify-center items-center flex-col gap-6 py-12">
+			<h2 className="text-xl font-bold lg:text-4xl dark:text-white">
+				Let&apos;s solve problems together
+			</h2>
+			<p className="text-xs font-thin lg:text-lg dark:text-white">
+				Our creativity and learning brings us together
+			</p>
+			<Button
+				text="Get in Touch"
+				arrow={true}
+				textColor="primary-green"
+				transparent={true}
+				href="#"
+			/>
 		</div>
 	);
 };
