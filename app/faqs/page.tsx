@@ -19,7 +19,7 @@ const faQuestions = [
 const page = () => {
 	return (
 		<div>
-			<h1>FAQs</h1>
+			<span></span>
 			<p>Here are some frequently asked questions</p>
 		</div>
 	);
