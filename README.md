@@ -2,6 +2,8 @@
 
 This repository contains the front-end code for the Inventors website. The project is built using Next.js 14, TypeScript, and Tailwind CSS.
 
+> Please always remember to pull the latest changes with `git pull` and make sure you always work on a new branch for each issue you are working on!
+
 ## Installation
 
 To get started with the project, follow these steps:
