@@ -11,3 +11,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+.container {
+  @apply max-w-screen-xl mx-auto px-4;
+}
+
+@media (min-width: 768px) {
+  .container {
+    @apply px-8;
+  }
+}
