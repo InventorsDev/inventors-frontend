@@ -8,6 +8,7 @@ type ButtonProps = {
 	arrow?: boolean;
 	navBtn?: boolean;
 	transparent?: boolean;
+	borderColor?: string;
 	href: string;
 };
 
@@ -17,22 +18,20 @@ const Button = ({
 	textColor = 'white',
 	arrow = true,
 	navBtn = false,
-	transparent = true,
+	transparent = false,
+	borderColor = 'primary-green',
 	href,
 }: ButtonProps) => {
-	const bg_color =
-		bgColor === 'primary-green' ? 'bg-primary-green' : 'bg-light-btn';
-	const text_color =
-		textColor === 'white' ? 'text-white' : 'text-primary-green';
+	const bg_color = `bg-${bgColor}`;
+	const text_color = `text-${textColor}`;
+	const border_color = `border-[1px] border-${borderColor}`;
 
 	return (
 		<Link
 			href={href}
-			className={`flex gap-2 items-center ${text_color} px-8 rounded inline-flex text-base ${
-				navBtn ? 'py-3' : 'py-4'
-			} ${
-				transparent ? 'bg-transparent border border-primary-green' : bg_color
-			}`}
+			className={`flex gap-2 items-center ${text_color} ${border_color} px-6 rounded inline-flex text-sm ${
+				navBtn ? 'py-2' : 'py-3'
+			} ${transparent ? 'bg-transparent' : bg_color}`}
 		>
 			<span>{text}</span>
 			{arrow && <BsArrowUpRight />}
