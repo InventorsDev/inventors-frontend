@@ -76,23 +76,23 @@ const page = () => {
 				))}
 			</section>
 
-			<section className="mx-5 bg-gradient-to-r from-[#AA7100] to-[#442D00] text-white py-10 my-10 rounded">
+			<section className="lg:mx-5 bg-gradient-to-r from-[#AA7100] to-[#442D00] text-white py-10 my-10 rounded">
 				<div className="container mx-auto text-center">
 					<div className="flex justify-center -space-x-4 mb-4">
 						<Image
 							src={person1}
 							alt="Person 1"
-							className="w-14 h-14 rounded-full object-cover"
+							className="w-10 h-10 lg:w-14 lg:h-14 rounded-full object-cover"
 						/>
 						<Image
 							src={person2}
 							alt="Person 2"
-							className="w-14 h-14 rounded-full border-2 border-white z-10 object-cover"
+							className="w-10 h-10 lg:w-14 lg:h-14 rounded-full border-2 border-white z-10 object-cover"
 						/>
 						<Image
 							src={person3}
 							alt="Person 3"
-							className="w-14 h-14 rounded-full object-cover"
+							className="w-10 h-10 lg:w-14 lg:h-14 rounded-full object-cover"
 						/>
 					</div>
 					<h2 className="text-2xl font-semibold">Still have questions?</h2>
