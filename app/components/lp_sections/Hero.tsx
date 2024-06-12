@@ -9,7 +9,7 @@ const Hero = () => {
 					<span className="text-sm font-normal uppercase text-[#464646] dark:text-[#AFB4C2]">
 						Who we are
 					</span>
-					<h2 className="text-xl md:text-3xl lg:text-5xl my-10 mx-48 font-bold">
+					<h2 className="text-2xl md:text-3xl lg:text-5xl my-6 lg:my-10 lg:mx-48 mx-4 font-bold">
 						We&apos;re a <span className="text-primary-green">technology</span>{' '}
 						community focused on growing skills and where we thrive for
 						creativity in the real world
