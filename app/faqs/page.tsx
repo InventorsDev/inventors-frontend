@@ -76,7 +76,7 @@ const page = () => {
 				))}
 			</section>
 
-			<section className="lg:mx-5 bg-gradient-to-r from-[#AA7100] to-[#442D00] text-white py-10 my-10 rounded">
+			<section className="lg:mx-5 bg-gradient-to-r from-[#AA7100] to-[#442D00] text-white py-10 my-16 lg:my-24 lg:mb-28 rounded">
 				<div className="container mx-auto text-center">
 					<div className="flex justify-center -space-x-4 mb-4">
 						<Image
