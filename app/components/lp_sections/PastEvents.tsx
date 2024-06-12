@@ -55,7 +55,12 @@ const PastEvents = () => {
 				<h2 className="lg:text-3xl text-xl font-semibold uppercase">
 					Take a look at some of our <br /> past events
 				</h2>
-				<Button href="#" text="View all events" textColor="dark-green"></Button>
+				<Button
+					href="#"
+					text="View all events"
+					transparent={true}
+					greenTransparent={true}
+				/>
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 				{latestEvents.map((event, index) => (
