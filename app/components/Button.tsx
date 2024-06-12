@@ -3,38 +3,31 @@ import Link from 'next/link';
 
 type ButtonProps = {
 	text?: string;
-	bgColor?: string;
-	textColor?: string;
-	arrow?: boolean;
-	navBtn?: boolean;
+	greenTransparent?: boolean;
+	whiteTransparent?: boolean;
 	transparent?: boolean;
-	borderColor?: string;
 	href: string;
 };
 
 const Button = ({
 	text = 'Get Started',
-	bgColor = 'primary-green',
-	textColor = 'white',
-	arrow = true,
-	navBtn = false,
+	greenTransparent = false,
+	whiteTransparent = false,
 	transparent = false,
-	borderColor = 'primary-green',
 	href,
 }: ButtonProps) => {
-	const bg_color = `bg-${bgColor}`;
-	const text_color = `text-${textColor}`;
-	const border_color = `border-[1px] border-${borderColor}`;
-
 	return (
 		<Link
 			href={href}
-			className={`flex gap-2 items-center ${text_color} ${border_color} px-6 rounded inline-flex text-sm ${
-				navBtn ? 'py-2' : 'py-3'
-			} ${transparent ? 'bg-transparent' : bg_color}`}
+			className={`gap-2 items-center px-6 py-4 rounded inline-flex text-sm ${
+				transparent
+					? 'bg-transparent border-[1px]'
+					: 'bg-primary-green text-white'
+			} ${greenTransparent ? 'text-primary-green border-primary-green' : ''}
+			${whiteTransparent ? 'text-white border-white' : ''}`}
 		>
 			<span>{text}</span>
-			{arrow && <BsArrowUpRight />}
+			<BsArrowUpRight />
 		</Link>
 	);
 };

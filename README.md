@@ -84,10 +84,9 @@ import Button from '../components/Button';
 The `Button` component accepts the following props:
 
 - **text** (optional): The text to be displayed on the button. Default is 'Get Started'.
-- **bgColor** (optional): The background color of the button. Accepts 'primary-green' (default) or 'light-btn'.
-- **textColor** (optional): The text color of the button. Accepts 'white' (default) or 'primary-green'.
-- **arrow** (optional): A boolean indicating whether to show an arrow icon. Default is true.
-- **navBtn** (optional): A boolean indicating the size of the button. Default is true for a smaller button, false for a larger button.
+- **greenTransparent** (optional): A boolean indicating if the button should have a transparent background with a green border and green text. Default is false.
+- **whiteTransparent** (optional): A boolean indicating if the button should have a transparent background with a white border and white text. Default is false.
+- **transparent** (optional): A boolean indicating if the button should have a fully transparent background with a border. Default is false.
 - **href** (required): The URL the button should link to.
 
 ### Using the Button Component
@@ -95,29 +94,25 @@ The `Button` component accepts the following props:
 To use the `Button` component in your section, simply include it in your JSX code:
 
 ```jsx
-<Button text="Get Started" bgColor="primary-green" textColor="white" arrow={true} navBtn={true} href="/get-started" />
+<Button text="Get Started" greenTransparent={false} whiteTransparent={false} transparent={false} href="/get-started" />
 ```
 
 ### Example
 
-Below is an example of how to use the `Button` component in a section:
+#### Green Transparent Button Example
 
 ```jsx
-import Button from '../components/Button';
-
-const MySection = () => {
-    return (
-        <section>
-            <h1>Welcome to the Inventors Website</h1>
-            <p>Get started by clicking the button below.</p>
-            <Button text="Get Started" bgColor="primary-green" textColor="white" arrow={true} href="/get-started" />
-        </section>
-    );
-};
+<Button text="Learn More" greenTransparent={true} href="/learn-more" />
 ```
 
-If you are using it in the Navbar, you can use the `navBtn` prop to make the button smaller:
-
+#### White Transparent Button Example
 ```jsx
-<Button text="Log in" bgColor="primary-green" textColor="white" navBtn={true} href="/get-started" />
+<Button text="Contact Us" whiteTransparent={true} href="/contact" />
 ```
+
+### Styling Explanation
+- Default Button: Green background with white text.
+- Green Transparent Button: Transparent background with green border and green text.
+- White Transparent Button: Transparent background with white border and white text.
+
+Use these variations to fit the styling needs of different sections of your project.

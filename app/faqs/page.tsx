@@ -102,10 +102,8 @@ const page = () => {
 					<div className="mt-4">
 						<Button
 							text="Get in Touch"
-							arrow={true}
-							textColor="white"
 							transparent={true}
-							borderColor="white"
+							whiteTransparent={true}
 							href="#"
 						/>
 					</div>
