@@ -14,6 +14,10 @@ const config: Config = {
 				'primary-green': '#00B598',
 				'light-green': '#E7F8F5',
 			},
+			backgroundImage: {
+				'dark-gradient': 'linear-gradient(90deg, #aa7100 0%, #442d00 100%)',
+				'light-gradient': 'linear-gradient(135deg, #001d18 0%, #066959 93.36%)',
+			},
 		},
 	},
 	plugins: [],
