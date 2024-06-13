@@ -78,13 +78,13 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div className="md:hidden" onClick={toggleNav}>
-					<MdOutlineMenu size={22} />
+					<MdOutlineMenu size={32} />
 				</div>
 			</div>
 			{isOpen && (
 				<div className="md:hidden fixed top-0 left-0 w-full h-full bg-lightbg text-black dark:bg-darkbg dark:text-white flex flex-col items-center justify-center ">
 					<MdClose
-						size={22}
+						size={32}
 						className="absolute top-8 right-4"
 						onClick={toggleNav}
 					/>
