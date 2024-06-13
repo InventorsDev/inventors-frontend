@@ -44,7 +44,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="py-6 w-full z-10 text-black dark:text-white">
+		<nav className="py-6 w-full z-20 text-black dark:text-white">
 			<div className="container mx-auto flex justify-between items-center">
 				<div className="flex-none">
 					<Link href="/">
