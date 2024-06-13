@@ -2,7 +2,10 @@ import Button from '../Button';
 
 const GetInTouch = () => {
 	return (
-		<div className="flex justify-center items-center flex-col gap-6 py-12">
+		<div
+			className="flex justify-center items-center flex-col gap-6 py-12"
+			id="contact-us"
+		>
 			<h2 className="text-xl font-bold lg:text-4xl dark:text-white">
 				Let&apos;s solve problems together
 			</h2>

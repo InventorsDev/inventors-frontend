@@ -61,7 +61,7 @@ const MeetLeads = () => {
 	};
 
 	return (
-		<section className="bg-darkbg text-white">
+		<section className="bg-darkbg text-white" id="our-team">
 			<div className="container py-20 ">
 				<div className="flex justify-between items-center">
 					<h2 className="text-3xl font-semibold mb-6">
