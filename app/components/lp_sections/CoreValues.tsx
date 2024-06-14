@@ -49,7 +49,7 @@ const coreValuesContent = [
 
 const CoreValues = () => {
 	return (
-		<div className="container my-20">
+		<div className="container my-20" id="who-we-are">
 			<div className="sm:mb-20 mb-12 flex  items-center justify-center  flex-col ">
 				<span className="text-sm font-normal uppercase text-[#464646] dark:text-[#AFB4C2] mb-5">
 					Our core values
