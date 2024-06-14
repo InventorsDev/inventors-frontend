@@ -19,11 +19,10 @@ const Button = ({
 	return (
 		<Link
 			href={href}
-			className={`gap-2 items-center px-6 py-4 rounded inline-flex text-sm ${
-				transparent
+			className={`gap-2 items-center px-6 py-4 rounded inline-flex text-sm ${transparent
 					? 'bg-transparent border-[1px]'
 					: 'bg-primary-green text-white'
-			} ${greenTransparent ? 'text-primary-green border-primary-green' : ''}
+				} ${greenTransparent ? 'text-primary-green border-primary-green' : ''}
 			${whiteTransparent ? 'text-white border-white' : ''}`}
 		>
 			<span>{text}</span>
