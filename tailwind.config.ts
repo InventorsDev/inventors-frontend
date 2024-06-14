@@ -19,6 +19,9 @@ const config: Config = {
 				'light-gradient': 'linear-gradient(135deg, #001d18 0%, #066959 93.36%)',
 			},
 		},
+		fontFamily: {
+			BrittanySignature: ['BrittanySignature', 'sans-serif'],
+		},
 	},
 	plugins: [],
 	darkMode: 'class',

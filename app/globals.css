@@ -37,3 +37,8 @@ html {
     /* Firefox */
   }
 }
+
+@font-face {
+  font-family: "BrittanySignature";
+  src: url("../public/fonts/BrittanySignature.ttf");
+}
