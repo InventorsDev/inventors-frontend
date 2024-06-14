@@ -52,7 +52,7 @@ const PastEvents = () => {
 	return (
 		<section className="container bg-dark-green text-white my-20">
 			<div className="flex justify-between items-start md:items-cente mb-8 gap-4">
-				<h2 className="lg:text-3xl text-xl font-semibold uppercase">
+				<h2 className="lg:text-3xl text-xl font-semibold uppercase text-black dark:text-white">
 					Take a look at some of our <br /> past events
 				</h2>
 				<Button
@@ -74,7 +74,9 @@ const PastEvents = () => {
 							className="rounded w-full object-cover"
 						/>
 						<div className="flex justify-between items-center align-center my-3">
-							<h3 className="text-xl font-semibold">{event.title}</h3>
+							<h3 className="text-xl font-semibold text-black dark:text-white">
+								{event.title}
+							</h3>
 							<p className="text-gray-400">{event.date}</p>
 						</div>
 						<Link href={event.link} className="text-primary-green">

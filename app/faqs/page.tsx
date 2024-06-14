@@ -56,7 +56,7 @@ const page = () => {
 			<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
 				{faQuestions.map((faq, index) => (
 					<div
-						className="faq-item bg-[#F3FCFA] dark:bg-[#003C33] px-6 py-10 rounded-lg relative"
+						className="faq-item bg-[#F3FCFA] dark:bg-[#003C33] px-6 py-10 rounded-lg relative -z-20"
 						key={index}
 					>
 						<div className="w-10 h-10 bg-[#00241E] rounded-full absolute top-8 right-6 flex items-center justify-center">
