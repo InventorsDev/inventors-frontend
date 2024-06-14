@@ -6,10 +6,10 @@ const GetInTouch = () => {
 			className="flex justify-center items-center flex-col gap-6 py-12"
 			id="contact-us"
 		>
-			<h2 className="text-xl font-bold lg:text-4xl dark:text-white">
+			<h2 className="text-2xl font-bold lg:text-4xl dark:text-white">
 				Let&apos;s solve problems together
 			</h2>
-			<p className="text-xs font-base lg:text-lg dark:text-white">
+			<p className="text-base font-base lg:text-lg dark:text-white">
 				Our creativity and learning brings us together
 			</p>
 			<Button
