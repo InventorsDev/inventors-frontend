@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 const Hero = () => {
 	return (
-		<div className="sm:py-0 mt-4">
+		<div className=" sm:py-0 mt-4">
 			<div className="dark:text-white">
-				<div className="text-center mb-20 lg:mt-24 mt-14">
+				<div className="container text-center mb-20 lg:mt-24 mt-14">
 					<span className="text-sm font-normal uppercase text-[#464646] dark:text-[#AFB4C2]">
 						Who we are
 					</span>
