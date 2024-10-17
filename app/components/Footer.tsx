@@ -40,13 +40,19 @@ const Footer = () => {
 						<h3 className="font-semibold text-xl mb-5">Inventors</h3>
 						<ul className="space-y-5">
 							<li>
-								<a href="/#who-we-are">Who We Are</a>
+								<a href="/#who-we-are" className="hover:text-primary-green">
+									Who We Are
+								</a>
 							</li>
 							<li>
-								<a href="/#our-team">Our Team</a>
+								<a href="/#our-team" className="hover:text-primary-green">
+									Our Team
+								</a>
 							</li>
 							<li>
-								<a href="/faqs">FAQs</a>
+								<a href="/faqs" className="hover:text-primary-green">
+									FAQs
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -54,7 +60,12 @@ const Footer = () => {
 						<h3 className="font-semibold text-xl mb-5">Contact Us</h3>
 						<div className="space-y-5">
 							<p>
-								<Link href={'/#contact-us'}>How can we help?</Link>
+								<Link
+									href={'/#contact-us'}
+									className="hover:text-primary-green"
+								>
+									How can we help?
+								</Link>
 							</p>
 							<p>
 								<strong>Phone</strong>
@@ -66,7 +77,12 @@ const Footer = () => {
 							<p>
 								<strong>Email</strong>
 								<br />
-								<a href="mailto:dinventors@gmail.com">dinventors@gmail.com</a>
+								<a
+									href="mailto:dinventors@gmail.com"
+									className="hover:text-primary-green"
+								>
+									dinventors@gmail.com
+								</a>
 							</p>
 						</div>
 					</div>
