@@ -2,11 +2,17 @@ import Image from 'next/image';
 
 import LighteningIcon from '@/public/images/lightening-icon.svg';
 
-import person1 from '@/public/images/person-1.jpeg';
-import person2 from '@/public/images/person-2.jpeg';
-import person3 from '@/public/images/person-3.jpeg';
+import person1 from '@/public/images/person-1.webp';
+import person2 from '@/public/images/person-2.webp';
+import person3 from '@/public/images/person-3.webp';
 
 import Button from '@/app/components/Button';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	title: 'FAQs',
+	description: 'Frequently asked questions',
+};
 
 const faQuestions = [
 	{
@@ -43,7 +49,7 @@ const faQuestions = [
 
 const page = () => {
 	return (
-		<div className="container faq-page" id='faqs'>
+		<div className="container faq-page">
 			<section className="text-center pt-24 pb-10">
 				<span className="text-sm font-normal uppercase text-[#464646] dark:text-[#AFB4C2]">
 					Frequently Asked Questions

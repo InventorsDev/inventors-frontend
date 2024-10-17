@@ -1,26 +1,26 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 
-import lightLogo from '@/public/images/light-logo.png';
-import darkLogo from '@/public/images/dark-logo.png';
+import lightLogo from '@/public/images/light-logo.webp';
+import darkLogo from '@/public/images/dark-logo.webp';
 
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaFacebookSquare, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
+import { DM_Sans } from 'next/font/google';
+import Link from 'next/link';
+
+const dmSans = DM_Sans({
+	subsets: ['latin'],
+});
+
 const Footer = () => {
 	const { theme, resolvedTheme } = useTheme();
-	const [mounted, setMounted] = useState(false);
-
-	// When mounted on client, now we can show the UI
-	useEffect(() => setMounted(true), []);
-
-	if (!mounted) return null;
 
 	return (
-		<footer className="border-t border-[#005B4C] mt-10">
+		<footer className={`border-t border-[#005B4C] mt-10" ${dmSans.className}`}>
 			<div className="container flex py-24 flex-col md:flex-row">
 				<div className="footer-column basis-1/4 mr-10 mb-10 md:mb-0">
 					<Image
@@ -40,20 +40,22 @@ const Footer = () => {
 						<h3 className="font-semibold text-xl mb-5">Inventors</h3>
 						<ul className="space-y-5">
 							<li>
-								<a href="#who-we-are">Who We Are</a>
+								<a href="/#who-we-are">Who We Are</a>
 							</li>
 							<li>
-								<a href="#our-team">Our Team</a>
+								<a href="/#our-team">Our Team</a>
 							</li>
 							<li>
-								<a href="#faqs">FAQs</a>
+								<a href="/faqs">FAQs</a>
 							</li>
 						</ul>
 					</div>
 					<div className="footer-column">
 						<h3 className="font-semibold text-xl mb-5">Contact Us</h3>
 						<div className="space-y-5">
-							<p>How can we help?</p>
+							<p>
+								<Link href={'/#contact-us'}>How can we help?</Link>
+							</p>
 							<p>
 								<strong>Phone</strong>
 								<br />
@@ -76,7 +78,9 @@ const Footer = () => {
 						</p>
 						<div className="flex space-x-3 mt-5">
 							<a
-								href="https://www.linkedin.com/company/inventors-community/posts/?feedView=all"
+								href="https://www.linkedin.com/company/inventors-community"
+								target="_blank"
+								rel="noreferrer"
 								aria-label="LinkedIn"
 								className="bg-[#007965] text-white rounded-full p-2"
 							>
@@ -84,6 +88,8 @@ const Footer = () => {
 							</a>
 							<a
 								href="https://x.com/D_INVENTORS"
+								target="_blank"
+								rel="noreferrer"
 								aria-label="Twitter"
 								className="bg-[#007965] text-white rounded-full p-2"
 							>
@@ -91,13 +97,17 @@ const Footer = () => {
 							</a>
 							<a
 								href="https://www.instagram.com/theinventorscommunity"
+								target="_blank"
+								rel="noreferrer"
 								aria-label="Instagram"
 								className="bg-[#007965] text-white rounded-full p-2"
 							>
 								<AiFillInstagram />
 							</a>
 							<a
-								href="https://web.facebook.com/inventorsPage"
+								href="https://facebook.com/inventorsPage"
+								target="_blank"
+								rel="noreferrer"
 								aria-label="Facebook"
 								className="bg-[#007965] text-white rounded-full p-2"
 							>
