@@ -6,6 +6,7 @@ import JoinNewsletter from './components/lp_sections/JoinNewsletter';
 import MeetLeads from './components/lp_sections/MeetLeads';
 import Partners from './components/lp_sections/Partners';
 import PastEvents from './components/lp_sections/PastEvents';
+import Page from './faqs/page'
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 			<InventorsNumbers />
 			<MeetLeads />
 			<Partners />
+			<Page />
 			<JoinNewsletter />
 			<GetInTouch />
 		</>

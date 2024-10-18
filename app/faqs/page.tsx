@@ -43,7 +43,7 @@ const faQuestions = [
 
 const page = () => {
 	return (
-		<div className="container faq-page">
+		<div className="container faq-page" id='faqs'>
 			<section className="text-center pt-24 pb-10">
 				<span className="text-sm font-normal uppercase text-[#464646] dark:text-[#AFB4C2]">
 					Frequently Asked Questions

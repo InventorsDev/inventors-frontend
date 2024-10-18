@@ -21,7 +21,7 @@ const links = [
 	},
 	{
 		name: 'FaQs',
-		href: '/faqs',
+		href: '#faqs',
 	},
 	{
 		name: 'Contact Us',
@@ -43,6 +43,16 @@ const Navbar = () => {
 		setIsOpen(!isOpen);
 	};
 
+	// Function to handle smooth scrolling
+	const handleSmoothScroll = (e: React.MouseEvent, href: string) => {
+		e.preventDefault();
+		const target = document.querySelector(href);
+		if (target) {
+			target.scrollIntoView({ behavior: 'smooth' });
+		}
+		toggleNav(); // Close mobile menu after clicking
+	};
+
 	return (
 		<nav className="py-6 w-full z-20 text-black dark:text-white">
 			<div className="container mx-auto flex justify-between items-center">
@@ -61,6 +71,7 @@ const Navbar = () => {
 						{links.map((link) => (
 							<Link
 								href={link.href}
+								onClick={(e) => handleSmoothScroll(e, link.href)}
 								className="hover:text-primary-green"
 								key={link.name}
 							>

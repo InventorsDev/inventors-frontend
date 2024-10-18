@@ -40,13 +40,13 @@ const Footer = () => {
 						<h3 className="font-semibold text-xl mb-5">Inventors</h3>
 						<ul className="space-y-5">
 							<li>
-								<a href="#">Who We Are</a>
+								<a href="#who-we-are">Who We Are</a>
 							</li>
 							<li>
-								<a href="#">Our Team</a>
+								<a href="#our-team">Our Team</a>
 							</li>
 							<li>
-								<a href="#">FAQs</a>
+								<a href="#faqs">FAQs</a>
 							</li>
 						</ul>
 					</div>
@@ -76,28 +76,28 @@ const Footer = () => {
 						</p>
 						<div className="flex space-x-3 mt-5">
 							<a
-								href="#"
+								href="https://www.linkedin.com/company/inventors-community/posts/?feedView=all"
 								aria-label="LinkedIn"
 								className="bg-[#007965] text-white rounded-full p-2"
 							>
 								<FaLinkedinIn />
 							</a>
 							<a
-								href="#"
+								href="https://x.com/D_INVENTORS"
 								aria-label="Twitter"
 								className="bg-[#007965] text-white rounded-full p-2"
 							>
 								<FaTwitter />
 							</a>
 							<a
-								href="#"
+								href="https://www.instagram.com/theinventorscommunity"
 								aria-label="Instagram"
 								className="bg-[#007965] text-white rounded-full p-2"
 							>
 								<AiFillInstagram />
 							</a>
 							<a
-								href="#"
+								href="https://web.facebook.com/inventorsPage"
 								aria-label="Facebook"
 								className="bg-[#007965] text-white rounded-full p-2"
 							>
