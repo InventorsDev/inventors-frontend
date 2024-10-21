@@ -79,7 +79,11 @@ const CoreValues = () => {
 				})}
 			</div>
 			<div className="flex justify-center mt-20">
-				<Button text="Join Our Community" transparent={false} href="#" />
+				<Button
+					text="Join Our Community"
+					transparent={false}
+					href="https://docs.google.com/forms/d/11xLg_QIjU-Qq8_su1w6rptxsEYV65Ny0NCNvlIdahJ0/viewform?edit_requested=true"
+				/>
 			</div>
 		</div>
 	);
