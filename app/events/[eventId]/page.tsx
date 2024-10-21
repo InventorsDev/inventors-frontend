@@ -11,7 +11,7 @@ export const generateStaticParams = async () => {
 	if (!events) return [];
 
 	return events.map((event: any) => ({
-		eventId: event._id,
+		params: { eventId: event._id },
 	}));
 };
 
