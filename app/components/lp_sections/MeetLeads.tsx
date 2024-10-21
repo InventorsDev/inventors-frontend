@@ -33,7 +33,7 @@ const teamMembers = [
 		name: 'Emmanuel Omololu',
 		title: 'Software Engineer',
 		position: 'Co-founder',
-		image: 'person-3.webp',
+		image: 'emmanuel-omololu.webp',
 		linkedin: 'https://www.linkedin.com/in/emmanuel-omololu-696702151/',
 	},
 ];
