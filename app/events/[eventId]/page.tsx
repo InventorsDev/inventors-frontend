@@ -8,6 +8,8 @@ type Props = {
 export const generateStaticParams = async () => {
 	const events = await getEvents();
 
+	if (!events) return [];
+
 	return events.map((event: any) => ({
 		eventId: event._id,
 	}));
