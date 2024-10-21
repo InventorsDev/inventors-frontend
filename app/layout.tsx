@@ -11,9 +11,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-	title: 'Inventors Community',
+	title: {
+		default: 'Inventors Community',
+		template: '%s | Inventors Community',
+	},
 	description:
-		'We are a community of developers, writers, designers, and all individuals in tech field.',
+		'A community of developers, writers, designers, and all individuals in tech field who are passionate about helping one another grow.',
+	keywords: ['community', 'developers', 'designers', 'writers', 'tech'],
 };
 
 export default function RootLayout({
