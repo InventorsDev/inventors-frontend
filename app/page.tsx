@@ -7,16 +7,12 @@ import MeetLeads from './components/lp_sections/MeetLeads';
 import Partners from './components/lp_sections/Partners';
 import PastEvents from './components/lp_sections/PastEvents';
 
-import Head from 'next/head';
-
 export default function Home() {
 	return (
 		<>
-			<Head>
-				<link rel="prefetch" href="/images/light-logo.webp" as="image" />
-				<link rel="prefetch" href="/images/dark-logo.webp" as="image" />
-				<link rel="prefetch" href="/images/inventors-leads.webp" as="image" />
-			</Head>
+			<link rel="prefetch" href="/images/light-logo.webp" as="image" />
+			<link rel="prefetch" href="/images/dark-logo.webp" as="image" />
+			<link rel="prefetch" href="/images/inventors-leads.webp" as="image" />
 			<Hero />
 			<CoreValues />
 			<PastEvents />
