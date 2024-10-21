@@ -67,13 +67,13 @@ const Footer = () => {
 									How can we help?
 								</Link>
 							</p>
-							<p>
+							{/* <p>
 								<strong>Phone</strong>
 								<br />
 								+234 (814) 688 3161
 								<br />
 								+234 (813) 232 4456
-							</p>
+							</p> */}
 							<p>
 								<strong>Email</strong>
 								<br />

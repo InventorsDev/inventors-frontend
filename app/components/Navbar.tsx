@@ -75,11 +75,11 @@ const Navbar = () => {
 						))}
 					</div>
 					<div className="hidden md:flex space-x-4">
-						<Link href={'/#contact-us'}>
+						<a href="mailto:dinventors@gmail.com">
 							<button className="bg-primary-green text-light-green px-4 py-2 rounded w-40">
 								Contact Us
 							</button>
-						</Link>
+						</a>
 						{/* 
              <button className="bg-light-green text-primary-green px-4 py-2 rounded w-40">
                 Contact Us
@@ -110,12 +110,17 @@ const Navbar = () => {
 							{link.name}
 						</a>
 					))}
-					<button className="bg-light-green text-primary-green px-4 py-2 rounded mt-4 w-40">
+					<a href="mailto:dinventors@gmail.com">
+						<button className="bg-primary-green text-light-green px-4 py-2 rounded w-40">
+							Contact Us
+						</button>
+					</a>
+					{/* <button className="bg-light-green text-primary-green px-4 py-2 rounded mt-4 w-40">
 						Create Account
 					</button>
 					<button className="bg-primary-green text-light-green px-4 py-2 rounded mt-4 w-40">
 						Log In
-					</button>
+					</button> */}
 				</div>
 			)}
 		</nav>

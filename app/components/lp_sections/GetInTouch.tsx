@@ -16,7 +16,7 @@ const GetInTouch = () => {
 				text="Get in Touch"
 				transparent={true}
 				greenTransparent={true}
-				href="#"
+				href="mailto:dinventors@gmail.com"
 			/>
 		</div>
 	);

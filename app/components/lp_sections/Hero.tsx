@@ -15,7 +15,10 @@ const Hero = () => {
 						creativity in the real world
 					</h2>
 					<div className="my-5">
-						<Button text="Get Started" href="/get-started" />
+						<Button
+							text="Get Started"
+							href="https://docs.google.com/forms/d/11xLg_QIjU-Qq8_su1w6rptxsEYV65Ny0NCNvlIdahJ0/viewform?edit_requested=true"
+						/>
 					</div>
 				</div>
 				<div className="w-full">
