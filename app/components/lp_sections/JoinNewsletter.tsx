@@ -7,14 +7,37 @@ import { BsArrowUpRight } from 'react-icons/bs';
 
 import curveShape from '@/public/images/shape-twist.png';
 
+import { joinNewsletter } from '@/actions/joinNewsletter';
+
 const JoinNewsletter = () => {
 	const { theme, resolvedTheme } = useTheme();
 	const [mounted, setMounted] = useState(false);
+
+	const [email, setEmail] = useState('');
+	const [response, setResponse] = useState({ status: '' });
 
 	// When mounted on client, now we can show the UI
 	useEffect(() => setMounted(true), []);
 
 	if (!mounted) return null;
+
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		const formData = new FormData(e.currentTarget);
+
+		// Assuming joinNewsletter is an async server action
+		try {
+			const res = await joinNewsletter(formData);
+			setResponse(res);
+			console.log(res);
+
+			setEmail('');
+
+			// Show success message
+		} catch (error) {
+			console.error('Failed to subscribe:', error);
+		}
+	};
 
 	return (
 		<section className="container">
@@ -40,16 +63,30 @@ const JoinNewsletter = () => {
 						The newsletter is for you if you appreciate making design based on
 						research <br /> and are driven by curiosity.
 					</p>
-					<div className="flex justify-center items-center text-sm bg-white w-full max-w-[600px] mx-auto p-1 lg:p-2">
-						<input
-							type="email"
-							placeholder="Email Address"
-							className="lg:w-full w-auto px-4 py-4 text-gray-700 outline-none focus:outline-none max-w-md bg-white"
-						/>
-						<button className="bg-primary-green text-white px-6 py-4">
-							Subscribe
-							<BsArrowUpRight className="inline-block ml-2" />
-						</button>
+					<div className="text-sm bg-white w-full max-w-[600px] mx-auto p-1 lg:p-2">
+						{response.status === 'subscribed' ? (
+							<p className="text-green-500 text-center">
+								Thank you for subscribing!
+							</p>
+						) : (
+							<form onSubmit={handleSubmit} className="flex w-full">
+								<input
+									type="email"
+									name="email"
+									value={email}
+									onChange={(e) => setEmail(e.target.value)}
+									placeholder="Email Address"
+									className="lg:w-full w-auto px-4 py-4 text-gray-700 outline-none focus:outline-none max-w-md bg-white basis-2/3"
+								/>
+								<button
+									className="bg-primary-green text-white px-6 py-4 basis-1/3"
+									type="submit"
+								>
+									Subscribe
+									<BsArrowUpRight className="inline-block ml-2" />
+								</button>
+							</form>
+						)}
 					</div>
 				</div>
 			</div>
