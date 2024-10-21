@@ -35,7 +35,7 @@ const PastEvents = async () => {
 		<section className="container bg-dark-green text-white py-20">
 			<div className="flex justify-between items-start md:items-cente mb-8 gap-4">
 				<h2 className="lg:text-3xl text-xl font-semibold uppercase text-black dark:text-white">
-					Take a look at some of our <br /> past events
+					Some of our upcoming and <br /> past events
 				</h2>
 				<Button
 					href="/events"

@@ -36,7 +36,7 @@ const page = async () => {
 		<div className="container py-20">
 			<div className="items-start md:items-cente mb-8">
 				<h2 className="lg:text-3xl text-xl font-semibold uppercase text-black dark:text-white">
-					Take a look at some of our <br /> events
+					Take a look at some of our upcoming <br /> and past events
 				</h2>
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
