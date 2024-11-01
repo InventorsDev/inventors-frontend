@@ -19,14 +19,14 @@ const teamMembers = [
 		name: 'Juwon Aderibole',
 		title: 'Software Engineer',
 		position: 'Co-founder',
-		image: 'person-1.webp',
+		image: 'juwon.webp',
 		linkedin: 'https://www.linkedin.com/in/oluwajuwon-aderibole-a88974b6/',
 	},
 	{
 		name: 'Michael P. Asefon',
 		title: 'Software Engineer',
 		position: 'Co-founder',
-		image: 'person-2.webp',
+		image: 'pelumi.webp',
 		linkedin: 'https://www.linkedin.com/in/michaelasefon/',
 	},
 	{
