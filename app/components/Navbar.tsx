@@ -23,7 +23,7 @@ const links = [
 	},
 	{
 		name: 'Our Team',
-		href: '/#our-team',
+		href: '/our-team',
 	},
 	{
 		name: 'Events',

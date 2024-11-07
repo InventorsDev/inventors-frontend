@@ -2,41 +2,10 @@
 
 import { useRef } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa6';
-
-const teamMembers = [
-	{
-		name: 'Anthony Adedayo',
-		title: 'Software Engineer',
-		position: 'Founder',
-		image: 'anthony-adedayo.webp',
-		linkedin: 'https://www.linkedin.com/in/anthony-a-olajide-96a0b9131/',
-	},
-	{
-		name: 'Juwon Aderibole',
-		title: 'Software Engineer',
-		position: 'Co-founder',
-		image: 'juwon.webp',
-		linkedin: 'https://www.linkedin.com/in/oluwajuwon-aderibole-a88974b6/',
-	},
-	{
-		name: 'Michael P. Asefon',
-		title: 'Software Engineer',
-		position: 'Co-founder',
-		image: 'pelumi.webp',
-		linkedin: 'https://www.linkedin.com/in/michaelasefon/',
-	},
-	{
-		name: 'Emmanuel Omololu',
-		title: 'Software Engineer',
-		position: 'Co-founder',
-		image: 'emmanuel-omololu.webp',
-		linkedin: 'https://www.linkedin.com/in/emmanuel-omololu-696702151/',
-	},
-];
+import { inventorsLeadership } from '@/utils/leads';
 
 const MeetLeads = () => {
 	const scrollRef = useRef<HTMLDivElement>(null);
@@ -80,8 +49,8 @@ const MeetLeads = () => {
 					ref={scrollRef}
 					className="flex overflow-x-auto no-scrollbar scrollbar-hide gap-8"
 				>
-					{teamMembers.map((member, index) => (
-						<div key={index} className="min-w-[300px] flex-shrink-0">
+					{inventorsLeadership.map((member) => (
+						<div key={member.id} className="min-w-[300px] flex-shrink-0">
 							<Image
 								src={`/images/${member.image}`}
 								alt={member.name}

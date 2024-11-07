@@ -1,0 +1,38 @@
+export const inventorsLeadership = [
+	{
+		id: 1,
+		name: 'Anthony Adedayo',
+		title: 'Software Engineer',
+		position: 'Founder',
+		image: 'anthony-adedayo.webp',
+		linkedin: 'https://www.linkedin.com/in/anthony-a-olajide-96a0b9131/',
+		role: 'founder',
+	},
+	{
+		id: 2,
+		name: 'Juwon Aderibole',
+		title: 'Software Engineer',
+		position: 'Co-founder',
+		image: 'juwon.webp',
+		linkedin: 'https://www.linkedin.com/in/oluwajuwon-aderibole-a88974b6/',
+		role: 'founder',
+	},
+	{
+		id: 3,
+		name: 'Michael P. Asefon',
+		title: 'Software Engineer',
+		position: 'Co-founder',
+		image: 'pelumi.webp',
+		linkedin: 'https://www.linkedin.com/in/michaelasefon/',
+		role: 'lead',
+	},
+	{
+		id: 4,
+		name: 'Emmanuel Omololu',
+		title: 'Software Engineer',
+		position: 'Co-founder',
+		image: 'emmanuel-omololu.webp',
+		linkedin: 'https://www.linkedin.com/in/emmanuel-omololu-696702151/',
+		role: 'founder',
+	},
+];
