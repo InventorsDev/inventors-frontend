@@ -8,6 +8,7 @@ import person3 from '@/public/images/person-3.webp';
 
 import Button from '@/app/components/Button';
 import { Metadata } from 'next';
+import { BsArrowUpRight } from 'react-icons/bs';
 
 export const metadata: Metadata = {
 	title: 'FAQs',
@@ -51,7 +52,7 @@ const page = () => {
 	return (
 		<div className="container faq-page">
 			<section className="text-center pt-24 pb-10">
-				<span className="text-sm font-normal uppercase text-[#464646] dark:text-[#AFB4C2]">
+				<span className="text-sm font-normal uppercase text-[#AFB4C2]">
 					Frequently Asked Questions
 				</span>
 				<h2 className="text-3xl mt-2 font-semibold">
@@ -62,7 +63,7 @@ const page = () => {
 			<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
 				{faQuestions.map((faq, index) => (
 					<div
-						className="faq-item bg-[#F3FCFA] dark:bg-[#003C33] px-6 py-10 rounded-lg relative -z-20"
+						className="faq-item bg-[#003C33] px-6 py-10 rounded-lg relative -z-20"
 						key={index}
 					>
 						<div className="w-10 h-10 bg-[#00241E] rounded-full absolute top-8 right-6 flex items-center justify-center">
@@ -74,10 +75,10 @@ const page = () => {
 								className="p-2"
 							/>
 						</div>
-						<h3 className="text-xl font-bold mb-2 mt-12 text-[#1D1E2C] dark:text-white">
+						<h3 className="text-xl font-bold mb-2 mt-12 text-white">
 							{faq.question}
 						</h3>
-						<p className="text-[#575A65] dark:text-[#AFB4C2]">{faq.answer}</p>
+						<p className="text-[#AFB4C2]">{faq.answer}</p>
 					</div>
 				))}
 			</section>
@@ -106,12 +107,15 @@ const page = () => {
 						Can&apos;t find the answer you&apos;re looking for? Reach out to us
 					</p>
 					<div className="mt-4">
-						<Button
-							text="Get in Touch"
-							transparent={true}
-							whiteTransparent={true}
-							href="mailto:dinventors@gmail.com"
-						/>
+						<a href="mailto:dinventors@gmail.com">
+							<Button
+								className="inline-flex gap-2 items-center"
+								transparent={true}
+								whiteTransparent={true}
+							>
+								Get in Touch <BsArrowUpRight />
+							</Button>
+						</a>
 					</div>
 				</div>
 			</section>

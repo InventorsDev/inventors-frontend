@@ -1,36 +1,32 @@
-import { BsArrowUpRight } from 'react-icons/bs';
-import Link from 'next/link';
-
 type ButtonProps = {
-	text?: string;
+	children: React.ReactNode;
 	greenTransparent?: boolean;
 	whiteTransparent?: boolean;
 	transparent?: boolean;
-	arrow?: boolean;
-	href: string;
+	className?: string;
+	buttonProps?: React.ButtonHTMLAttributes<HTMLButtonElement>;
 };
 
 const Button = ({
-	text = 'Get Started',
+	children,
 	greenTransparent = false,
 	whiteTransparent = false,
 	transparent = false,
-	arrow = true,
-	href,
+	className,
+	buttonProps,
 }: ButtonProps) => {
 	return (
-		<Link
-			href={href}
-			className={`gap-2 items-center px-6 py-4 rounded inline-flex text-sm ${
+		<button
+			className={`${className} px-6 py-4 rounded text-sm ${
 				transparent
 					? 'bg-transparent border-[1px]'
 					: 'bg-primary-green text-white'
 			} ${greenTransparent ? 'text-primary-green border-primary-green' : ''}
 			${whiteTransparent ? 'text-white border-white' : ''}`}
+			{...buttonProps}
 		>
-			<span>{text}</span>
-			{arrow && <BsArrowUpRight />}
-		</Link>
+			{children}
+		</button>
 	);
 };
 

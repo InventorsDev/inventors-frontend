@@ -3,9 +3,9 @@ import Button from '@/app/components/Button';
 
 const ProfileCard = () => {
 	return (
-		<div className="container my-20">
-			<div className="w-full md:w-[80%]">
-				<Button text="Go Back" href="#" />
+		<div className="container my-14 md:my-20">
+			<div className="w-full md:w-[70%] mx-auto">
+				<Button>Go Back</Button>
 				<div className="flex flex-col md:flex-row items-start md:items-center gap-8 mt-10">
 					{/* Profile Image */}
 					<Image
@@ -25,18 +25,32 @@ const ProfileCard = () => {
 								<span className="text-green-400">Microsoft</span>
 							</span>
 						</h2>
-						<div className="text-[#E0E6EB] flex">
+						<div className="text-[#E0E6EB] flex flex-col md:flex-row">
 							<div className="space-y-1">
-								<p>Email: kelvindoe@gmail.com</p>
-								<p>Phone number: +234 802 845 8888</p>
-								<p>Location: Lagos, Nigeria</p>
-								<p>Areas of interest: UI design, product design</p>
+								<p>
+									<b>Email:</b> kelvindoe@gmail.com
+								</p>
+								<p>
+									<b>Phone number:</b> +234 802 845 8888
+								</p>
+								<p>
+									<b>Location:</b> Lagos, Nigeria
+								</p>
+								<p>
+									<b>Areas of interest:</b> UI design, product design
+								</p>
 							</div>
-							<div className="border-l border-[#E0E6EB] mx-8 h-20"></div>
+							<div className="border-l border-[#E0E6EB] mx-8 h-20 hidden md:block"></div>
 							<div className="space-y-1">
-								<p>Experience: 2 years</p>
-								<p>Primary skill: Software engineer</p>
-								<p>Secondary skill: Data Analyst</p>
+								<p>
+									<b>Experience:</b> 2 years
+								</p>
+								<p>
+									<b>Primary skill:</b> Software engineer
+								</p>
+								<p>
+									<b>Secondary skill:</b> Data Analyst
+								</p>
 							</div>
 						</div>
 					</div>

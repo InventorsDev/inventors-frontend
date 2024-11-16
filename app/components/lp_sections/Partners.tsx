@@ -39,7 +39,7 @@ const Partners = () => {
 								alt={partner.name}
 								width={200}
 								height={200}
-								objectFit="contain"
+								className="object-contain"
 							/>
 						</div>
 					))}

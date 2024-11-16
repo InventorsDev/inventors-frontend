@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa6';
 import { inventorsLeadership } from '@/utils/leads';
+import Link from 'next/link';
 
 const MeetLeads = () => {
 	const scrollRef = useRef<HTMLDivElement>(null);
@@ -51,19 +52,23 @@ const MeetLeads = () => {
 				>
 					{inventorsLeadership.map((member) => (
 						<div key={member.id} className="min-w-[300px] flex-shrink-0">
-							<Image
-								src={`/images/${member.image}`}
-								alt={member.name}
-								width={300}
-								height={400}
-								className="object-cover h-80"
-							/>
+							<Link href={'/our-team/testing'} className="w-full">
+								<Image
+									src={`/images/${member.image}`}
+									alt={member.name}
+									width={300}
+									height={400}
+									className="object-cover h-80"
+								/>
+							</Link>
 							<div className="mt-4 flex justify-between items-start">
-								<div className="">
-									<h3 className="text-xl font-semibold">{member.name}</h3>
-									<p className="text-[#AFB4C2]">{member.title}</p>
-									<p className="text-yellow-400 italic">{member.position}</p>
-								</div>
+								<Link href={'/our-team/testing'} className="w-full">
+									<div className="">
+										<h3 className="text-xl font-semibold">{member.name}</h3>
+										<p className="text-[#AFB4C2]">{member.title}</p>
+										<p className="text-yellow-400 italic">{member.position}</p>
+									</div>
+								</Link>
 								<a
 									href={member.linkedin}
 									aria-label="LinkedIn"

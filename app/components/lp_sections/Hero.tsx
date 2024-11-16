@@ -1,12 +1,14 @@
-import Button from '../Button';
 import Image from 'next/image';
+
+import Btn from '../Button';
+import { BsArrowUpRight } from 'react-icons/bs';
 
 const Hero = () => {
 	return (
 		<div className=" sm:py-0 mt-4">
-			<div className="dark:text-white">
+			<div className="text-white">
 				<div className="container text-center mb-20 lg:mt-24 mt-14">
-					<span className="text-sm font-normal uppercase text-[#464646] dark:text-[#AFB4C2]">
+					<span className="text-sm font-normal uppercase text-[#AFB4C2]">
 						Who we are
 					</span>
 					<h2 className="text-2xl md:text-3xl lg:text-5xl my-6 lg:my-10 lg:mx-48 mx-4 font-bold">
@@ -15,10 +17,11 @@ const Hero = () => {
 						creativity in the real world
 					</h2>
 					<div className="my-5">
-						<Button
-							text="Get Started"
-							href="https://docs.google.com/forms/d/11xLg_QIjU-Qq8_su1w6rptxsEYV65Ny0NCNvlIdahJ0/viewform?edit_requested=true"
-						/>
+						<a href="https://docs.google.com/forms/d/11xLg_QIjU-Qq8_su1w6rptxsEYV65Ny0NCNvlIdahJ0/viewform?edit_requested=true">
+							<Btn className="inline-flex gap-2 items-center">
+								Get Started <BsArrowUpRight />
+							</Btn>
+						</a>
 					</div>
 				</div>
 				<div className="w-full">

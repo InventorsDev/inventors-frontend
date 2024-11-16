@@ -2,6 +2,8 @@ import Button from '../Button';
 
 import Image from 'next/image';
 
+import { BsArrowUpRight } from 'react-icons/bs';
+
 const coreValuesContent = [
 	{
 		id: 1,
@@ -51,10 +53,10 @@ const CoreValues = () => {
 	return (
 		<div className="container my-20" id="who-we-are">
 			<div className="sm:mb-20 mb-12 flex  items-center justify-center  flex-col ">
-				<span className="text-sm font-normal uppercase text-[#464646] dark:text-[#AFB4C2] mb-5">
+				<span className="text-sm font-normal uppercase text-[#AFB4C2] mb-5">
 					Our core values
 				</span>
-				<h2 className="text-2xl font-bold lg:text-4xl dark:text-white">
+				<h2 className="text-2xl font-bold lg:text-4xl text-white">
 					The guiding concepts for us
 				</h2>
 			</div>
@@ -71,19 +73,17 @@ const CoreValues = () => {
 								priority
 							/>
 							<h1 className="text-xl font-bold mt-5 mb-3">{title}</h1>
-							<p className="text-[#464646] dark:text-[#CDCED9] font-light">
-								{description}
-							</p>
+							<p className="text-[#CDCED9] font-light">{description}</p>
 						</div>
 					);
 				})}
 			</div>
 			<div className="flex justify-center mt-20">
-				<Button
-					text="Join Our Community"
-					transparent={false}
-					href="https://docs.google.com/forms/d/11xLg_QIjU-Qq8_su1w6rptxsEYV65Ny0NCNvlIdahJ0/viewform?edit_requested=true"
-				/>
+				<a href="https://docs.google.com/forms/d/11xLg_QIjU-Qq8_su1w6rptxsEYV65Ny0NCNvlIdahJ0/viewform?edit_requested=true">
+					<Button className="flex gap-2 items-center">
+						Join Our Community <BsArrowUpRight />
+					</Button>
+				</a>
 			</div>
 		</div>
 	);

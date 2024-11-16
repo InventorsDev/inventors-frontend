@@ -6,7 +6,6 @@ import { formatDate } from '@/lib/utils/formatDate';
 import { BsArrowUpRight } from 'react-icons/bs';
 
 import { getEvents } from '@/lib/events';
-import Button from '../components/Button';
 
 type Event = {
 	_id: string;

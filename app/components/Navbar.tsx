@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTheme } from 'next-themes';
 
 import lightLogo from '@/public/images/light-logo.webp';
 import darkLogo from '@/public/images/dark-logo.webp';
@@ -15,6 +14,7 @@ const dmSans = DM_Sans({
 });
 
 import { MdOutlineMenu, MdClose } from 'react-icons/md';
+import Btn from './Button';
 
 const links = [
 	{
@@ -41,25 +41,17 @@ const links = [
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
-	const { theme, resolvedTheme } = useTheme();
 
 	const toggleNav = () => {
 		setIsOpen(!isOpen);
 	};
 
 	return (
-		<nav
-			className={`py-6 w-full z-20 text-black dark:text-white ${dmSans.className}`}
-		>
+		<nav className={`py-6 w-full z-20 text-white ${dmSans.className}`}>
 			<div className="container mx-auto flex justify-between items-center">
 				<div className="flex-none">
 					<Link href="/">
-						<Image
-							src={resolvedTheme === 'dark' ? darkLogo : lightLogo}
-							alt="Inventors"
-							height={40}
-							width={40}
-						/>
+						<Image src={darkLogo} alt="Inventors" height={40} width={40} />
 					</Link>
 				</div>
 				<div className="hidden md:flex gap-10 justify-center items-center">
@@ -76,9 +68,7 @@ const Navbar = () => {
 					</div>
 					<div className="hidden md:flex space-x-4">
 						<a href="mailto:dinventors@gmail.com">
-							<button className="bg-primary-green text-light-green px-4 py-2 rounded w-40">
-								Contact Us
-							</button>
+							<Btn className="w-40">Contact Us</Btn>
 						</a>
 						{/* 
              <button className="bg-light-green text-primary-green px-4 py-2 rounded w-40">
@@ -94,7 +84,7 @@ const Navbar = () => {
 				</div>
 			</div>
 			{isOpen && (
-				<div className="md:hidden fixed top-0 left-0 w-full h-full bg-lightbg text-black dark:bg-darkbg dark:text-white flex flex-col items-center justify-center ">
+				<div className="md:hidden fixed top-0 left-0 w-full h-full bg-darkbg text-white flex flex-col items-center justify-center ">
 					<MdClose
 						size={32}
 						className="absolute top-8 right-4"
@@ -111,9 +101,7 @@ const Navbar = () => {
 						</a>
 					))}
 					<a href="mailto:dinventors@gmail.com">
-						<button className="bg-primary-green text-light-green px-4 py-2 rounded w-40">
-							Contact Us
-						</button>
+						<Btn className="w-40">Contact Us</Btn>
 					</a>
 					{/* <button className="bg-light-green text-primary-green px-4 py-2 rounded mt-4 w-40">
 						Create Account

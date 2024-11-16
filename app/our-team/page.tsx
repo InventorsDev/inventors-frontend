@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Button from '../components/Button';
+import Button from '@/app/components/Button';
 
 import { FaLinkedinIn } from 'react-icons/fa';
 import { inventorsLeadership } from '@/utils/leads';
@@ -11,6 +11,7 @@ import GetInTouch from '@/app/components/lp_sections/GetInTouch';
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { BsArrowUpRight } from 'react-icons/bs';
 
 const OurTeam = () => {
 	const [activeTab, setActiveTab] = useState('founders');
@@ -65,10 +66,11 @@ const OurTeam = () => {
 								welcome new members. Explore opportunities to get involved and
 								become a part of our dynamic and supportive community.
 							</p>
-							<Button
-								text="Join Us"
-								href="https://docs.google.com/forms/d/11xLg_QIjU-Qq8_su1w6rptxsEYV65Ny0NCNvlIdahJ0/viewform?edit_requested=true"
-							/>
+							<a href="https://docs.google.com/forms/d/11xLg_QIjU-Qq8_su1w6rptxsEYV65Ny0NCNvlIdahJ0/viewform?edit_requested=true">
+								<Button className="flex gap-2 items-center mt-8">
+									Join Us <BsArrowUpRight />
+								</Button>
+							</a>
 						</div>
 					</div>
 					<div className="py-20 space-y-10">
@@ -77,7 +79,6 @@ const OurTeam = () => {
 							LEADERSHIP TEAM
 						</h2>
 						<div className="relative flex items-center justify-center w-64 h-16 bg-transparent border-2 border-primary-green rounded-full p-1">
-							{/* Animated background for the active tab */}
 							<div
 								className={`absolute w-1/2 h-[90%] bg-primary-green rounded-full transition-transform duration-300 ease-in-out ${
 									activeTab === 'founders'
@@ -112,26 +113,28 @@ const OurTeam = () => {
 										: member.role === 'lead'
 								)
 								.map((member) => (
-									<Link
-										href={'/our-team/testing'}
-										key={member.id}
-										className="w-full"
-									>
-										<Image
-											src={`/images/${member.image}`}
-											alt={member.name}
-											width={400}
-											height={400}
-											className="object-cover h-96 w-full"
-										/>
+									<div key={member.id}>
+										<Link href={'/our-team/testing'} className="w-full">
+											<Image
+												src={`/images/${member.image}`}
+												alt={member.name}
+												width={400}
+												height={400}
+												className="object-cover h-96 w-full"
+											/>
+										</Link>
 										<div className="mt-4 flex justify-between items-start">
-											<div className="">
-												<h3 className="text-xl font-semibold">{member.name}</h3>
-												<p className="text-[#AFB4C2]">{member.title}</p>
-												<p className="text-yellow-400 italic">
-													{member.position}
-												</p>
-											</div>
+											<Link href={'/our-team/testing'} className="w-full">
+												<div className="">
+													<h3 className="text-xl font-semibold">
+														{member.name}
+													</h3>
+													<p className="text-[#AFB4C2]">{member.title}</p>
+													<p className="text-yellow-400 italic">
+														{member.position}
+													</p>
+												</div>
+											</Link>
 											<a
 												href={member.linkedin}
 												aria-label="LinkedIn"
@@ -140,7 +143,7 @@ const OurTeam = () => {
 												<FaLinkedinIn />
 											</a>
 										</div>
-									</Link>
+									</div>
 								))}
 						</div>
 					</div>

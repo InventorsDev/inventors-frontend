@@ -1,5 +1,3 @@
-import { Providers } from './providers';
-
 import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
 import './globals.css';
@@ -26,17 +24,13 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" suppressHydrationWarning>
-			<body
-				className={`bg-lightbg text-black dark:bg-darkbg dark:text-white ${dmSans.className}`}
-			>
-				<Providers>
-					<main>
-						<Navbar />
-						{children}
-						<Footer />
-					</main>
-				</Providers>
+		<html lang="en">
+			<body className={`bg-darkbg text-white ${dmSans.className}`}>
+				<main>
+					<Navbar />
+					{children}
+					<Footer />
+				</main>
 			</body>
 		</html>
 	);

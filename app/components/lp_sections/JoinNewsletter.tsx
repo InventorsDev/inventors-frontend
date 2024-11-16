@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import { useTheme } from 'next-themes';
+import { useState } from 'react';
 
 import { BsArrowUpRight } from 'react-icons/bs';
 
@@ -10,16 +9,8 @@ import curveShape from '@/public/images/shape-twist.png';
 import { joinNewsletter } from '@/actions/joinNewsletter';
 
 const JoinNewsletter = () => {
-	const { theme, resolvedTheme } = useTheme();
-	const [mounted, setMounted] = useState(false);
-
 	const [email, setEmail] = useState('');
 	const [response, setResponse] = useState({ status: '' });
-
-	// When mounted on client, now we can show the UI
-	useEffect(() => setMounted(true), []);
-
-	if (!mounted) return null;
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
@@ -41,20 +32,16 @@ const JoinNewsletter = () => {
 
 	return (
 		<section className="container">
-			<div className=" relative bg-gradient-to-r from-[#32ECCE] to-[#00241E] dark:from-[#02856F] dark:to-[#005446] text-white py-16 overflow-hidden my-20 rounded">
-				{resolvedTheme !== 'dark' ? (
-					<div className="lg:block hidden absolute right-0 top-0 h-full w-3/5 bg-[#00241E] rounded-full transform scale-125 translate-x-1/2"></div>
-				) : (
-					<div className="lg:block hidden absolute right-0 top-28 ">
-						<Image
-							src={curveShape}
-							alt="Leaf"
-							objectFit="contain"
-							width={250}
-							height={250}
-						/>
-					</div>
-				)}
+			<div className=" relative bg-gradient-to-r from-[#02856F] to-[#005446] text-white py-16 overflow-hidden my-20 rounded">
+				<div className="lg:block hidden absolute right-0 top-28 ">
+					<Image
+						src={curveShape}
+						alt="Leaf"
+						className="object-contain"
+						width={250}
+						height={250}
+					/>
+				</div>
 				<div className="relative container mx-auto text-center px-6">
 					<h1 className="text-2xl lg:text-4xl font-bold mb-4">
 						Join our newsletter
