@@ -42,7 +42,7 @@ const InventorsNumbers = () => {
 				<p className="text-center text-lg sm:text-2xl md:text-2xl font-bold sm:font-medium">
 					INVENTORS IN NUMBERS
 				</p>
-				<div className="flex flex-wrap justify-around mt-10 sm:mt-14">
+				<div className="flex lg:flex-row flex-col lg:gap-0 gap-16 items-center justify-center mt-10 sm:mt-14">
 					<div className="w-1/2 mb-10 sm:mb-0 sm:w-1/4 text-center flex flex-col gap-1">
 						<p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
 							2015
