@@ -17,36 +17,31 @@ export const metadata: Metadata = {
 
 const faQuestions = [
 	{
-		question: 'What is your return policy?',
-		answer:
-			'Our return policy is 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange.',
+		question: 'What is Inventors?',
+		answer: 'Inventors is a Tech Community where Creativity thrives, Skills grow and Futures are shaped.',
 	},
 	{
-		question: 'Do you ship internationally?',
-		answer:
-			'Yes, we ship internationally. Shipping costs will apply, and will be added at checkout.',
+		question: 'Is Inventors only for Students?',
+		answer: 'Inventors is meant for everyone — students, graduates, beginners, and professionals alike.',
 	},
 	{
-		question: 'What is your warranty policy?',
-		answer:
-			'Our warranty policy is 1 year. If 1 year has gone by since your purchase, unfortunately we can’t offer you a refund or exchange.',
+		question: 'Where did Inventors start?',
+		answer: 'Inventors started as a tech community in 2015 at Olusegun Agagu University of Science and Technology and is now open to every tech enthusiast around the world.',
 	},
 	{
-		question: 'What payment methods do you accept?',
-		answer:
-			'We accept all major credit cards, PayPal, and Google Pay. We also accept payment plans through Klarna.',
+		question: 'Do I pay any fee to join Inventors?',
+		answer: 'We do not charge any fee to join our community.',
 	},
 	{
-		question: 'How do I track my order?',
-		answer:
-			'You will receive an email with your tracking number once your order has shipped. If you have an account, you can also track your order by logging in and viewing your order history.',
+		question: 'What can I learn on joining Inventors?',
+		answer: 'All in-demand tech skills — cybersecurity, frontend and backend development, data analysis, product design, and more.',
 	},
 	{
-		question: 'Can I change my order?',
-		answer:
-			'If you need to change your order, please contact us immediately. We usually process orders within 2-4 hours, and once we have processed your order, we will be unable to make any changes.',
+		question: 'What do I gain from joining?',
+		answer: 'Access to mentorship, guidance, resources, job opportunities, and collaboration.',
 	},
 ];
+
 
 const page = () => {
 	return (
