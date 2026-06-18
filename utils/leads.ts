@@ -24,7 +24,7 @@ export const inventorsLeadership = [
 		position: 'Co-founder',
 		image: 'pelumi.webp',
 		linkedin: 'https://www.linkedin.com/in/michaelasefon/',
-		role: 'lead',
+		role: 'founder',
 	},
 	{
 		id: 4,

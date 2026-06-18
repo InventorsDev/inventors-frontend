@@ -12,43 +12,30 @@ import { BsArrowUpRight } from 'react-icons/bs';
 
 export const metadata: Metadata = {
 	title: 'FAQs',
-	description: 'Frequently asked questions',
+	description: 'Frequently asked questions about Inventors Community',
 };
 
-const faQuestions = [
-	{
-		question: 'What is your return policy?',
-		answer:
-			'Our return policy is 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange.',
-	},
-	{
-		question: 'Do you ship internationally?',
-		answer:
-			'Yes, we ship internationally. Shipping costs will apply, and will be added at checkout.',
-	},
-	{
-		question: 'What is your warranty policy?',
-		answer:
-			'Our warranty policy is 1 year. If 1 year has gone by since your purchase, unfortunately we can’t offer you a refund or exchange.',
-	},
-	{
-		question: 'What payment methods do you accept?',
-		answer:
-			'We accept all major credit cards, PayPal, and Google Pay. We also accept payment plans through Klarna.',
-	},
-	{
-		question: 'How do I track my order?',
-		answer:
-			'You will receive an email with your tracking number once your order has shipped. If you have an account, you can also track your order by logging in and viewing your order history.',
-	},
-	{
-		question: 'Can I change my order?',
-		answer:
-			'If you need to change your order, please contact us immediately. We usually process orders within 2-4 hours, and once we have processed your order, we will be unable to make any changes.',
-	},
-];
+type FAQ = {
+	_id: string;
+	question: string;
+	answer: string;
+};
 
-const page = () => {
+const getFaqs = async (): Promise<FAQ[]> => {
+	try {
+		const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/faq`, {
+			next: { revalidate: 3600 },
+		});
+		if (!response.ok) return [];
+		return await response.json();
+	} catch {
+		return [];
+	}
+};
+
+const page = async () => {
+	const faqs = await getFaqs();
+
 	return (
 		<div className="container faq-page">
 			<section className="text-center pt-24 pb-10">
@@ -61,10 +48,10 @@ const page = () => {
 			</section>
 
 			<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
-				{faQuestions.map((faq, index) => (
+				{faqs.map((faq) => (
 					<div
 						className="faq-item bg-[#003C33] px-6 py-10 rounded-lg relative -z-20"
-						key={index}
+						key={faq._id}
 					>
 						<div className="w-10 h-10 bg-[#00241E] rounded-full absolute top-8 right-6 flex items-center justify-center">
 							<Image

@@ -15,7 +15,7 @@ const dmSans = DM_Sans({
 
 const Footer = () => {
 	return (
-		<footer className={`border-t border-[#005B4C] mt-10" ${dmSans.className}`}>
+		<footer className={`border-t border-[#005B4C] mt-10 ${dmSans.className}`}>
 			<div className="">
 				<div className="container flex py-24 flex-col md:flex-row">
 					<div className="footer-column basis-1/4 mr-10 mb-10 md:mb-0">

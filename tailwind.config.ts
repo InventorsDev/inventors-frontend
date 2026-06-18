@@ -13,6 +13,7 @@ const config: Config = {
 				lightbg: '#FFFFFF',
 				'primary-green': '#00B598',
 				'light-green': '#E7F8F5',
+				'dark-green': '#003C33',
 			},
 			backgroundImage: {
 				'dark-gradient': 'linear-gradient(90deg, #aa7100 0%, #442d00 100%)',

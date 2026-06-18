@@ -1,13 +1,26 @@
 export const getEvents = async () => {
-	const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/event`);
-	const data = await response.json();
-	return data.results;
+	try {
+		const response = await fetch(
+			`${process.env.NEXT_PUBLIC_API_URL}/event`,
+			{ next: { revalidate: 60 } }
+		);
+		if (!response.ok) return [];
+		const data = await response.json();
+		return data.results ?? [];
+	} catch {
+		return [];
+	}
 };
 
 export const getEventById = async (eventId: string) => {
-	const response = await fetch(
-		`${process.env.NEXT_PUBLIC_API_URL}/event/${eventId}`
-	);
-	const data = await response.json();
-	return data;
+	try {
+		const response = await fetch(
+			`${process.env.NEXT_PUBLIC_API_URL}/event/${eventId}`,
+			{ next: { revalidate: 60 } }
+		);
+		if (!response.ok) return null;
+		return await response.json();
+	} catch {
+		return null;
+	}
 };

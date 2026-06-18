@@ -27,9 +27,8 @@ type Event = {
 };
 
 const PastEvents = async () => {
-	const latestEvents: Event[] = await getEvents().then((data) => {
-		return data?.slice(0, 4);
-	});
+	const events = await getEvents();
+	const latestEvents: Event[] = (events ?? []).slice(0, 4);
 
 	return (
 		<section className="container bg-dark-green text-white py-20">
