@@ -1,5 +1,4 @@
 import Button from '../Button';
-
 import Image from 'next/image';
 
 import { BsArrowUpRight } from 'react-icons/bs';
@@ -7,44 +6,44 @@ import { BsArrowUpRight } from 'react-icons/bs';
 const coreValuesContent = [
 	{
 		id: 1,
-		title: 'Empathy',
+		title: 'Empowerment Through Knowledge',
 		description:
-			'Guiding our Actions, Understanding Your Needs. At the heart of our core values lies empathy, where we listen, understand, and act with compassion to ensure your experience is truly valued and respected',
+			'We believe in the power of learning and growth. By sharing skills, resources, and opportunities, we equip every member to reach their full potential and contribute meaningfully to the tech ecosystem.',
 		icon: '/icons/core-value-dummy.png',
 	},
 	{
 		id: 2,
-		title: 'Empathy',
+		title: 'Mentorship and Multiplication',
 		description:
-			'Guiding our Actions, Understanding Your Needs. At the heart of our core values lies empathy, where we listen, understand, and act with compassion to ensure your experience is truly valued and respected',
+			' We don’t just build talent, we build mentors. Every member is encouraged to learn, lead, and pass on knowledge, creating a cycle of continuous impact across generations.',
 		icon: '/icons/core-value-dummy.png',
 	},
 	{
 		id: 3,
-		title: 'Empathy',
+		title: 'Innovation with Purpose',
 		description:
-			'Guiding our Actions, Understanding Your Needs. At the heart of our core values lies empathy, where we listen, understand, and act with compassion to ensure your experience is truly valued and respected',
+			' We encourage curiosity and bold thinking, but always with impact in mind. Our ideas aim to solve real problems and create lasting value in our communities.',
 		icon: '/icons/core-value-dummy.png',
 	},
 	{
 		id: 4,
-		title: 'Empathy',
+		title: 'Collaboration Over Competition',
 		description:
-			'Guiding our Actions, Understanding Your Needs. At the heart of our core values lies empathy, where we listen, understand, and act with compassion to ensure your experience is truly valued and respected',
+			'We grow stronger together. We foster a culture of collaboration, support, and open sharing, where everyone’s voice is heard and contributions are valued.',
 		icon: '/icons/core-value-dummy.png',
 	},
 	{
 		id: 5,
-		title: 'Empathy',
+		title: 'Integrity and Accountability',
 		description:
-			'Guiding our Actions, Understanding Your Needs. At the heart of our core values lies empathy, where we listen, understand, and act with compassion to ensure your experience is truly valued and respected',
+			' We hold ourselves to high standards. Honesty, responsibility, and respect guide how we work, lead, and represent our community.',
 		icon: '/icons/core-value-dummy.png',
 	},
 	{
 		id: 6,
-		title: 'Empathy',
+		title: 'Inclusivity and Diversity',
 		description:
-			'Guiding our Actions, Understanding Your Needs. At the heart of our core values lies empathy, where we listen, understand, and act with compassion to ensure your experience is truly valued and respected',
+			' We welcome individuals from all backgrounds and experiences. Diversity fuels creativity, and inclusivity ensures that everyone has the chance to thrive.',
 		icon: '/icons/core-value-dummy.png',
 	},
 ];
@@ -60,14 +59,14 @@ const CoreValues = () => {
 					The guiding concepts for us
 				</h2>
 			</div>
-			<div className="grid sm:grid-cols-3 grid-col-1 sm:gap-20 gap-16">
+			<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-col-1 sm:gap-20 gap-16">
 				{coreValuesContent.map((content) => {
 					let { id, title, description, icon } = content;
 					return (
 						<div key={id}>
 							<Image
 								src={icon}
-								alt="Image of the Inventors Leads"
+								alt="icon"
 								width={30}
 								height={30}
 								priority
