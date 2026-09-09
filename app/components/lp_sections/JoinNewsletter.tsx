@@ -44,11 +44,11 @@ const JoinNewsletter = () => {
 				</div>
 				<div className="relative container mx-auto text-center px-6">
 					<h1 className="text-2xl lg:text-4xl font-bold mb-4">
-						Join our newsletter
+						Stay Connected
 					</h1>
 					<p className="text-base lg:text-lg mb-8">
-						The newsletter is for you if you appreciate making design based on
-						research <br /> and are driven by curiosity.
+						Get updates about upcoming events, learning opportunities, community projects, and 
+						<br /> the latest from the Inventors Community.
 					</p>
 					<div className="text-sm bg-white w-full max-w-[600px] mx-auto p-1 lg:p-2">
 						{response.status === 'subscribed' ? (

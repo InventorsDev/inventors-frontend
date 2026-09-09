@@ -8,10 +8,11 @@ const GetInTouch = () => {
 			id="contact-us"
 		>
 			<h2 className="text-2xl font-bold lg:text-4xl text-white">
-				Let&apos;s solve problems together
+				Have an idea? Let&apos;s build it together.
 			</h2>
-			<p className="text-base font-base lg:text-lg text-white">
-				Our creativity and learning brings us together
+			<p className="text-base text-center font-base lg:text-lg text-white">
+				Whether you&apos;re learning your first technical skill, working on a project, or looking for people 
+				<br />to build with, there&apos;s a place for you in the Inventors Community.
 			</p>
 			<a href="mailto:dinventors@gmail.com">
 				<Button
@@ -19,7 +20,7 @@ const GetInTouch = () => {
 					transparent={true}
 					greenTransparent={true}
 				>
-					Get in Touch <BsArrowUpRight />
+					Contact Us <BsArrowUpRight />
 				</Button>
 			</a>
 		</div>
