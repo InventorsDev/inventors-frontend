@@ -2,7 +2,7 @@ export const inventorsLeadership = [
 	{
 		id: 1,
 		name: 'Anthony Adedayo',
-		title: 'Software Engineer',
+		title: 'Senior Software Engineer',
 		position: 'Founder',
 		image: 'anthony-adedayo.webp',
 		linkedin: 'https://www.linkedin.com/in/anthony-a-olajide-96a0b9131/',
@@ -11,7 +11,7 @@ export const inventorsLeadership = [
 	{
 		id: 2,
 		name: 'Juwon Aderibole',
-		title: 'Software Engineer',
+		title: 'Head of Engineering',
 		position: 'Co-founder',
 		image: 'juwon.webp',
 		linkedin: 'https://www.linkedin.com/in/oluwajuwon-aderibole-a88974b6/',
@@ -20,7 +20,7 @@ export const inventorsLeadership = [
 	{
 		id: 3,
 		name: 'Michael P. Asefon',
-		title: 'Software Engineer',
+		title: 'Head of Software Engineering',
 		position: 'Co-founder',
 		image: 'pelumi.webp',
 		linkedin: 'https://www.linkedin.com/in/michaelasefon/',
@@ -29,7 +29,7 @@ export const inventorsLeadership = [
 	{
 		id: 4,
 		name: 'Emmanuel Omololu',
-		title: 'Software Engineer',
+		title: 'Full-stack Software Engineer',
 		position: 'Co-founder',
 		image: 'emmanuel-omololu.webp',
 		linkedin: 'https://www.linkedin.com/in/emmanuel-omololu-696702151/',

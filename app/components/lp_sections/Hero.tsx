@@ -13,8 +13,7 @@ const Hero = () => {
 					</span>
 					<h2 className="text-2xl md:text-3xl lg:text-5xl my-6 lg:my-10 lg:mx-48 mx-4 font-bold">
 						We&apos;re a <span className="text-primary-green">technology</span>{' '}
-						community focused on growing skills and where we thrive for
-						creativity in the real world
+						community focused on growing skills and improving creativity in the real world
 					</h2>
 					<div className="my-5">
 						<a href="https://docs.google.com/forms/d/11xLg_QIjU-Qq8_su1w6rptxsEYV65Ny0NCNvlIdahJ0/viewform?edit_requested=true">

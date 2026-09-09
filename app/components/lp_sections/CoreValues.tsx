@@ -9,43 +9,36 @@ const coreValuesContent = [
 		id: 1,
 		title: 'Empathy',
 		description:
-			'Guiding our Actions, Understanding Your Needs. At the heart of our core values lies empathy, where we listen, understand, and act with compassion to ensure your experience is truly valued and respected',
-		icon: '/icons/core-value-dummy.png',
+			'We listen, understand, and create with people in mind. We believe meaningful technology starts with understanding the problems people actually face.',
+		icon: '/icons/love.svg',
 	},
 	{
 		id: 2,
-		title: 'Empathy',
+		title: 'Learning',
 		description:
-			'Guiding our Actions, Understanding Your Needs. At the heart of our core values lies empathy, where we listen, understand, and act with compassion to ensure your experience is truly valued and respected',
-		icon: '/icons/core-value-dummy.png',
+			'We stay curious and continuously develop our skills by learning from one another, experimenting, and sharing knowledge',
+		icon: '/icons/learn.svg',
 	},
 	{
 		id: 3,
-		title: 'Empathy',
+		title: 'Collaboration',
 		description:
-			'Guiding our Actions, Understanding Your Needs. At the heart of our core values lies empathy, where we listen, understand, and act with compassion to ensure your experience is truly valued and respected',
-		icon: '/icons/core-value-dummy.png',
+			'Great ideas rarely happen in isolation. We work together, share perspectives, and create an environment where everyone can contribute.',
+		icon: '/icons/award.svg',
 	},
 	{
 		id: 4,
-		title: 'Empathy',
+		title: 'Innovation',
 		description:
-			'Guiding our Actions, Understanding Your Needs. At the heart of our core values lies empathy, where we listen, understand, and act with compassion to ensure your experience is truly valued and respected',
-		icon: '/icons/core-value-dummy.png',
+			'We encourage people to question existing approaches, explore new ideas, and turn creative thinking into practical solutions.',
+		icon: '/icons/code.svg',
 	},
 	{
 		id: 5,
-		title: 'Empathy',
+		title: 'Impact',
 		description:
-			'Guiding our Actions, Understanding Your Needs. At the heart of our core values lies empathy, where we listen, understand, and act with compassion to ensure your experience is truly valued and respected',
-		icon: '/icons/core-value-dummy.png',
-	},
-	{
-		id: 6,
-		title: 'Empathy',
-		description:
-			'Guiding our Actions, Understanding Your Needs. At the heart of our core values lies empathy, where we listen, understand, and act with compassion to ensure your experience is truly valued and respected',
-		icon: '/icons/core-value-dummy.png',
+			'Technology is most valuable when it solves real problems. We focus on creating solutions and opportunities that make a meaningful difference.',
+		icon: '/icons/graph.svg',
 	},
 ];
 
